@@ -3,6 +3,15 @@
 ##############################
 *
 !.gitignore
+
+## dependencies
+## ttf-inconsolata
+## ttf-font-awesome
+## ttf-material-design-icons-git
+## nerd-fonts-fira-code
+## nitrogen
+## pywal (pip)
+
 ##############################
 # Allow files inside .config #
 ##############################
