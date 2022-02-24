@@ -60,8 +60,8 @@ floating_modifier Mod4
 bindsym Mod4+Return exec urxvt
 
 # change language
-# exec "setxkbmap -layout us,de"
-# exec "setxkbmap -option 'grp:alt_shift_toggle'"
+exec setxkbmap -layout us,es
+exec setxkbmap -option 'grp:alt_shift_toggle'
 
 # kill focused window
 bindsym Mod4+Shift+q kill
@@ -132,6 +132,9 @@ bindsym Mod4+minus scratchpad show
 
 bindsym $mod+Shift+d move workspace to output eDP-1
 bindsym $mod+Shift+a move workspace to output HDMI-1
+
+
+
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
