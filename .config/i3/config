@@ -28,7 +28,7 @@ font pango:Inconsolata 10
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id setxkbmap en_US
 exec_always autorandr --change
-exec_always --no-startup-id wal -n -i /home/crystal/Pictures/walps/walp1.jpg
+exec_always --no-startup-id wal -n -i /home/crystal/Pictures/walps/walp2.jpg
 exec_always --no-startup-id /home/crystal/.config/polybar/launch.sh
 exec_always --no-startup-id nitrogen -b --restore
 # exec xbindkeys
