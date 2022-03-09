@@ -15,7 +15,7 @@ font pango:Inconsolata 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+# font pango:DejaVu Sans Mono 8
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -26,13 +26,13 @@ font pango:Inconsolata 10
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id setxkbmap en_US
+# exec --no-startup-id setxkbmap en_US
 exec_always autorandr --change
 exec_always --no-startup-id wal -n -i /home/crystal/Pictures/walps/walp2.jpg
 exec_always --no-startup-id /home/crystal/.config/polybar/launch.sh
 exec_always --no-startup-id nitrogen -b --restore
 # exec xbindkeys
- 
+
 # Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
@@ -59,9 +59,6 @@ floating_modifier Mod4
 # start a terminal
 bindsym Mod4+Return exec urxvt
 
-# change language
-exec setxkbmap -layout us,es
-exec setxkbmap -option 'grp:alt_shift_toggle'
 
 # kill focused window
 bindsym Mod4+Shift+q kill
@@ -236,3 +233,4 @@ for_window [class="Devtools"] floating enable
 
 
 
+ exec_always --no-startup-id "setxkbmap -model pc104 -layout us,es -option grp:alt_space_toggle "
