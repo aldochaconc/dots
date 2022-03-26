@@ -73,7 +73,6 @@ HIST_STAMPS="mm/dd/yyyy"
 plugins=(git history emoji encode64 sudo web-search copypath copyfile copybuffer dirhistory jsontools)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
 
